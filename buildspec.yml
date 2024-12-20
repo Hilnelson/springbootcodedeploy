@@ -6,6 +6,8 @@ phases:
       java: corretto11
   build:
     commands:
+      - echo "Listing contents of current directory"
+      - ls -la
       - mvn clean install
   post_build:
     commands:
